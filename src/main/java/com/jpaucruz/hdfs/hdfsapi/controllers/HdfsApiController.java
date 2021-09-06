@@ -69,8 +69,9 @@ public class HdfsApiController {
 
     try {
     	System.out.println(filedaeleab.getName());
-    	hdfsApiService.insertfile(filedaeleab, filedaeleab.getName());
+    	hdfsApiService.insertfile(filedaeleab, filedaeleab.getOriginalFilename());
     	System.out.println(filedaeleab.toString());
+    	System.out.println(filedaeleab.getOriginalFilename());
     }
     catch (Exception e) {
       e.printStackTrace();	
